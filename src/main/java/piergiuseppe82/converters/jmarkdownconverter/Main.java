@@ -10,6 +10,7 @@ import java.io.OutputStream;
 import java.nio.file.Files;
 import java.nio.file.Paths;
 
+import org.markdown4j.JSONCodePlugin;
 import org.markdown4j.Markdown4jProcessor;
 import org.markdown4j.PropertiesCodePlugin;
 import org.markdown4j.SqlCodePlugin;
@@ -38,6 +39,7 @@ public class Main
         Markdown4jProcessor paDownProcessor = new Markdown4jProcessor();
         paDownProcessor.registerPlugins(new PropertiesCodePlugin());
         paDownProcessor.registerPlugins(new SqlCodePlugin());
+        paDownProcessor.registerPlugins(new JSONCodePlugin());
         String markdownToHtml = paDownProcessor.process( new String(encoded, "UTF-8"));
 		 
         if(args.length > 1 && args[1] != null && args[1].endsWith(".html")){
