@@ -10,12 +10,13 @@ import java.io.OutputStream;
 import java.nio.file.Files;
 import java.nio.file.Paths;
 
-import org.markdown4j.JSONCodePlugin;
-import org.markdown4j.JavaCodePlugin;
 import org.markdown4j.Markdown4jProcessor;
-import org.markdown4j.PropertiesCodePlugin;
-import org.markdown4j.SqlCodePlugin;
 import org.xhtmlrenderer.pdf.ITextRenderer;
+
+import piergiuseppe82.converters.jmarkdownconverter.plugins.JSONCodePlugin;
+import piergiuseppe82.converters.jmarkdownconverter.plugins.JavaCodePlugin;
+import piergiuseppe82.converters.jmarkdownconverter.plugins.PropertiesCodePlugin;
+import piergiuseppe82.converters.jmarkdownconverter.plugins.SqlCodePlugin;
 
 
 
